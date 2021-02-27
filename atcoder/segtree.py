@@ -117,3 +117,6 @@ class SegTree:
 
     def _update(self, k: int) -> None:
         self._d[k] = self._op(self._d[2 * k], self._d[2 * k + 1])
+
+    __getitem__ = get
+    __setitem__ = set
